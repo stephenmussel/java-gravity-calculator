@@ -27,10 +27,3 @@ public class GravityCalculator {
         return position;
     }
 }
-
-// TODO: compute the position of an object after falling 10 seconds, outputting the position in meters
-// NOTES: position = 0.5 * at^2 + vi(t) + xi
-// DESC: a is acceleration (m/s^2)
-// DESC: time(s)
-// DESC: Initial velocity (m/s)
-// DESC: Initial position

@@ -6,6 +6,8 @@ public class GravityCalculator {
         double initialPosition = 0.0;
         double finalPosition = 0.0;
 
+        finalPosition = computePositionOfObject(gravity, fallingTime, initialVelocity, initialPosition);
+
         // unmodified output is "The object's position after 10.0 seconds is 0.0m.
         System.out.println("The object's position after " + fallingTime +
                 " seconds is " + finalPosition + " m.");
@@ -21,6 +23,7 @@ public class GravityCalculator {
                 * (gravity * Math.pow(fallingTime, 2))
                 + (initialVelocity * fallingTime)
                 + initialPosition;
+
         return position;
     }
 }

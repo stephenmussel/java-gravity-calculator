@@ -21,6 +21,7 @@ public class GravityCalculator {
                 * (gravity * Math.pow(fallingTime, 2))
                 + (initialVelocity * fallingTime)
                 + initialPosition;
+        return position;
     }
 }
 

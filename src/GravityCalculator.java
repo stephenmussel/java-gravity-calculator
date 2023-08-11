@@ -10,10 +10,22 @@ public class GravityCalculator {
         System.out.println("The object's position after " + fallingTime +
                 " seconds is " + finalPosition + " m.");
     }
+
+    public static double computePositionOfObject(
+            double gravity,
+            double fallingTime,
+            double initialVelocity,
+            double initialPosition
+    ) {
+        double position = 0.5
+                * (gravity * Math.pow(fallingTime, 2))
+                + (initialVelocity * fallingTime)
+                + initialPosition;
+    }
 }
 
 // TODO: compute the position of an object after falling 10 seconds, outputting the position in meters
-// NOTES: position = 0.5 at^2 + vi(t) + xi
+// NOTES: position = 0.5 * at^2 + vi(t) + xi
 // DESC: a is acceleration (m/s^2)
 // DESC: time(s)
 // DESC: Initial velocity (m/s)
